@@ -1,3 +1,9 @@
 h3{
   color:dodgerblue;
 }
+
+/* components can be styled using class definitions, hence allowing the styling on the classes. */
+.app-successalert{
+  padding:2px;
+  border: 2px solid greenyellow;
+}
