@@ -9,6 +9,7 @@ export class ServerComponent{
     playerID: number = 11;
     playerstatus: string = 'online';
     gameName = 'COD: Modern Warfare';
+    status =false;
     getPlayerID(){
       return this.playerID;
     }

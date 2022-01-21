@@ -1,1 +1,7 @@
-<app-server></app-server>
+<!-- Example of string interpolation using JS functions and variables -->
+
+<h2>Player number {{ getPlayerID() }} is </h2> <p>{{ getPlayerStatus() }} and playing {{ gameName }}</p>
+
+
+<!-- Example of property binding using JS functions -->
+<button class = "btn btn-primary" [disabled]="!allowNewServer"> Add Server </button>
