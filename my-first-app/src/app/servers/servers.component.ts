@@ -11,6 +11,7 @@ export class ServersComponent implements OnInit {
   playerstatus: string = 'online';
   gameName = 'COD: Modern Warfare';
   status =false;
+  setServerStatus = "No server is created";
   getPlayerID(){
     return this.playerID;
   }
@@ -29,5 +30,7 @@ export class ServersComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onCreateServer(){
+    this.setServerStatus="Server is created";
+  }
 }
