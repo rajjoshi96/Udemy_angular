@@ -1,11 +1,11 @@
 <!-- Example of string interpolation using JS functions and variables -->
 
-<h2>Player number {{ getPlayerID() }} is </h2> <p>{{ getPlayerStatus() }} and playing {{ gameName }}</p>
+    <h2>Player number {{ getPlayerID() }} is </h2> <p>{{ getPlayerStatus() }} and playing {{ gameName }}</p>
 
 
 <!-- Example of property binding using JS functions -->
-<button class = "btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()"> Add Server </button>
-<p>{{setServerStatus}}</p>
+    <button class = "btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()"> Add Server </button>
+    <p>{{setServerStatus}}</p>
 
 
 
@@ -18,7 +18,20 @@
 <!-- end-->
 
 
-
 <!--Two way data binding to be done-->
-<input type="text" class="form-control" [(ngModel)]="servername">
+    <input type="text" class="form-control" [(ngModel)]="servername">
+<!--end-->
+
+
+
+<!--using ngif to output data conditionally start
+    enabling and disabling form elements based on conditions
+-->
+
+<p *ngif = "serverCreated">Server is created and server name is {{servername}}</p>
+
+
+<p [ngStyle]="{color : getColor()}"
+    [ngClass]="{online: serverStatus==='online'}">Server number: {{serverNumber}} is {{serverStatus}}</p>
+<app-server *ngFor="let server of servers"></app-server>
 <!--end-->

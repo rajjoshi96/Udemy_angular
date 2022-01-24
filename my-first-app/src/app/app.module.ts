@@ -2,11 +2,17 @@ import { ServerComponent } from './server/server.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
+
+
 import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessalertComponent } from './successalert/successalert.component';
 import { Assignment2Component } from './assignment2/assignment2.component';
+import { importType } from '@angular/compiler/src/output/output_ast';
+import { Assignment3Component } from './assignment3/assignment3.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +21,13 @@ import { Assignment2Component } from './assignment2/assignment2.component';
     ServersComponent,
     WarningAlertComponent,
     SuccessalertComponent,
-    Assignment2Component
+    Assignment2Component,
+    Assignment3Component
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
