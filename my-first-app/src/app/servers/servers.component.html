@@ -6,3 +6,19 @@
 <!-- Example of property binding using JS functions -->
 <button class = "btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()"> Add Server </button>
 <p>{{setServerStatus}}</p>
+
+
+
+
+<!--Passing data through forms-->
+<!--<input type="text" class="form-control" placeholder="set server name" (input)="SetServerName($event)" >-->
+<!--$event takes up the data and sends it to TS....using DOM-->
+
+
+<!-- end-->
+
+
+
+<!--Two way data binding to be done-->
+<input type="text" class="form-control" [(ngModel)]="servername">
+<!--end-->

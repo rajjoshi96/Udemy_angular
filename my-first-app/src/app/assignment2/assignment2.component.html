@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="tp_header">
+    <div class="content">
+      <h2>Data Binding ass 2</h2>
+    </div>
+    <div class="q1">
+      <h4>Q1. </h4>
+      <input type="text" class="form-control" placeholder="Enter your username" [(ngModel)]="Username">
+    </div>
+    <div class="q2">
+      <h4>Q2. </h4>
+      <p>{{Username}}</p>
+    </div>
+    <div class="q3">
+      <h4>Q3. </h4>
+      <button class="btn btn-primary" [disabled]="Username === '' " (click)="ResetUser()" >Set username</button>
+    </div>
+  </div>
+</div>
