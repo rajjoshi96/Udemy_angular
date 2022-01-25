@@ -1,14 +1,14 @@
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <app-header></app-header>
-      <div class="container">
-        <app-recipe></app-recipe>
-      </div>
-      <div class="col-md-12">
-        <app-shopping_list></app-shopping_list>
-      </div>
-    </div>
-  </div>
-  </div>
+	<div class="row">
+		<div class="col-md-12">
+			<app-header (featureSelected)="onNavigate($event)"></app-header>
+			<div class="container">
+				<app-recipe *ngIf="loadedFeature==='recipe'"></app-recipe>
+			</div>
+			<div class="col-md-12">
+				<app-shopping_list *ngIf="loadedFeature!=='recipe'"></app-shopping_list>
+			</div>
+		</div>
+	</div>
+</div>
