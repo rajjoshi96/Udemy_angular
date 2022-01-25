@@ -13,6 +13,7 @@ import { SuccessalertComponent } from './successalert/successalert.component';
 import { Assignment2Component } from './assignment2/assignment2.component';
 import { importType } from '@angular/compiler/src/output/output_ast';
 import { Assignment3Component } from './assignment3/assignment3.component';
+import { HPCComponent } from './hpc/hpc.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { Assignment3Component } from './assignment3/assignment3.component';
     WarningAlertComponent,
     SuccessalertComponent,
     Assignment2Component,
-    Assignment3Component
+    Assignment3Component,
+    HPCComponent
   ],
   imports: [
     BrowserModule,
