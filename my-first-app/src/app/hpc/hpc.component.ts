@@ -13,10 +13,10 @@ export class HPCComponent implements OnInit {
 
   load_data(){
     this.http
-      .get("https://aninditabasu.github.io/indica/html/rv.html")
+      .get("http://ccdb.hemiola.com/characters/radicals/85?filter=gb&fields=kDefinition,kMandarin ")
       .subscribe((posts:any) => {
-        // this.posts=posts;
-        alert(JSON.stringify(posts));
+        this.posts=posts;
+        //alert(JSON.stringify(posts));
       });
 
   }
